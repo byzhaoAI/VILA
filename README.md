@@ -27,7 +27,7 @@
 ---
 
 ## 🎉 Introduction
-This is the official PyTorch implementation of **VILA** <a href="https://arxiv.org/abs/2309.07117">[Arxiv]</a>, a novel dual-branch framework that addresses representation rigidity in pretrained model (PTM) based analytic class-incremental learning (CIL). 
+This is the official PyTorch implementation of **VILA** <a href="https://arxiv.org/abs/">[Arxiv]</a>, a novel dual-branch framework that addresses representation rigidity in pretrained model (PTM) based analytic class-incremental learning (CIL). 
 
 VILA integrates a task‑adapted Vision Transformer with a frozen vision‑language model via geometric feature alignment (UGC) and semantic decision calibration (CSE). It leverages recursive least squares updates to achieve mathematically optimal weights with zero forgetting, consistently outperforming iterative methods across diverse benchmarks with higher training efficiency.
 
