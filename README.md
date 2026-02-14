@@ -137,6 +137,16 @@ python main.py --config=exps/[MODEL NAME].json
 - **memory_per_class**: If `fixed memory` is set to true, the model will preserve a fixed number of `memory_per_class` exemplars for each class.
 
 
+### 4. Issues
+
+If Hugging Face is unreachable, manually download the weights and use the code from lines 122–125 in `utils/inc_net.py`.
+```
+model, _, preprocess = open_clip.create_model_and_transforms('ViT-B-16', pretrained=None)
+state_dict = torch.load("[THE DOWNLOADED MODEL WEIGHTS]")
+msg = model.load_state_dict(state_dict)
+print(msg)
+```
+
 
 ## 📊 Reproduced Results
 
@@ -165,7 +175,7 @@ python main.py --config=exps/[MODEL NAME].json
 
 ## 🤝 Contact
 
-If there are any questions, please feel free to propose new features by opening an issue or contact with the author: **Binyu Zhao**([binyu-zhao@outlook.com](mailto:binyu-zhao@outlook.com)).
+If there are any questions, please feel free to propose new features by opening an issue or contact with the author: **Binyu Zhao** ([binyu-zhao@outlook.com](mailto:binyu-zhao@outlook.com)).
 
 
 

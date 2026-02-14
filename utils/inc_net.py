@@ -106,6 +106,7 @@ def get_backbone(args, pretrained=False):
         elif '_clip' in name:
             import open_clip
             print('Using CLIP model as the backbone')
+            
             if name == 'laion400m_e32_clip':
                 _pretrained = 'laion400m_e32'
             elif name == 'laion2b_s34b_b88k_clip':
@@ -115,18 +116,13 @@ def get_backbone(args, pretrained=False):
             else:
                 raise NotImplementedError("Unknown type {}".format(name))
             
-            model, _, preprocess = open_clip.create_model_and_transforms('ViT-B-16', pretrained=None)
-            state_dict = torch.load("./ckpt/timm/vit_base_patch16_clip_224.laion400m_e32/open_clip_pytorch_model.bin")
-            msg = model.load_state_dict(state_dict)
-            print(msg)
-            
-            # try:
-            #     model, _, preprocess = open_clip.create_model_and_transforms('ViT-B-16', pretrained=_pretrained)
-            # except Exception:
-            #     model, _, preprocess = open_clip.create_model_and_transforms('ViT-B-16', pretrained=None)
-            #     state_dict = torch.load("./ckpt/timm/vit_base_patch16_clip_224.laion400m_e32/open_clip_pytorch_model.bin")
-            #     msg = model.load_state_dict(state_dict)
-            #     print(msg)
+            model, _, preprocess = open_clip.create_model_and_transforms('ViT-B-16', pretrained=_pretrained)
+
+            # If Hugging Face is unreachable, manually download the weights and use the code below:
+            # model, _, preprocess = open_clip.create_model_and_transforms('ViT-B-16', pretrained=None)
+            # state_dict = torch.load("./ckpt/timm/vit_base_patch16_clip_224.laion400m_e32/open_clip_pytorch_model.bin")
+            # msg = model.load_state_dict(state_dict)
+            # print(msg)
 
             # freeze all but the trainable parameters
             for name, p in model.named_parameters():
