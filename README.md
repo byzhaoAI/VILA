@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/VILA-v1.0-darkcyan"></a>
-  <a href='https://arxiv.org/abs/2309.07117'><img src='https://img.shields.io/badge/Arxiv-2309.07117-b31b1b.svg?logo=arXiv'></a>
+  <!-- <a href='https://arxiv.org/abs/2309.07117'><img src='https://img.shields.io/badge/Arxiv-2309.07117-b31b1b.svg?logo=arXiv'></a> -->
   <a href=""><img src="https://img.shields.io/github/stars/byzhaoAI/VILA?color=4fb5ee"></a>
   <a href="https://hits.sh/github.com/byzhaoAI/VILA/"><img alt="Hits" src="https://hits.sh/github.com/byzhaoAI/VILA.svg?view=today-total"/></a>
   <a href=""><img src="https://black.readthedocs.io/en/stable/_static/license.svg"></a>
