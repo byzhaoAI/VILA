@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/VILA-v1.0-darkcyan"></a>
-  <!-- <a href='https://arxiv.org/abs/2309.07117'><img src='https://img.shields.io/badge/Arxiv-2309.07117-b31b1b.svg?logo=arXiv'></a> -->
+  <a href='https://arxiv.org/abs/2602.13670'><img src='https://img.shields.io/badge/arxiv-2602.13670-b31b1b.svg?logo=arXiv'></a>
   <a href=""><img src="https://img.shields.io/github/stars/byzhaoAI/VILA?color=4fb5ee"></a>
   <a href="https://hits.sh/github.com/byzhaoAI/VILA/"><img alt="Hits" src="https://hits.sh/github.com/byzhaoAI/VILA.svg?view=today-total"/></a>
   <a href=""><img src="https://black.readthedocs.io/en/stable/_static/license.svg"></a>
@@ -27,7 +27,7 @@
 ---
 
 ## 🎉 Introduction
-This is the official PyTorch implementation of **VILA** <a href="https://arxiv.org/abs/">[Arxiv]</a>, a novel dual-branch framework that addresses representation rigidity in pretrained model (PTM) based analytic class-incremental learning (CIL). 
+This is the official PyTorch implementation of **VILA** <a href="https://arxiv.org/abs/2602.13670">[Arxiv]</a>, a novel dual-branch framework that addresses representation rigidity in pretrained model (PTM) based analytic class-incremental learning (CIL). 
 
 VILA integrates a task‑adapted Vision Transformer with a frozen vision‑language model via geometric feature alignment (UGC) and semantic decision calibration (CSE). It leverages recursive least squares updates to achieve mathematically optimal weights with zero forgetting, consistently outperforming iterative methods across diverse benchmarks with higher training efficiency.
 
@@ -39,7 +39,7 @@ VILA integrates a task‑adapted Vision Transformer with a frozen vision‑langu
 
 
 
-### 🌈 Datasets Supported
+## 🌈 Datasets Supported
 
 - `CIFAR100`: will be automatically downloaded by the code.
 - `ImageNet-R`: Google Drive: [link](https://drive.google.com/file/d/1SG4TbiL8_DooekztyCVK8mPmfhMo8fkR/view?usp=sharing) or Onedrive: [link](https://entuedu-my.sharepoint.com/:u:/g/personal/n2207876b_e_ntu_edu_sg/EU4jyLL29CtBsZkB6y-JSbgBzWF5YHhBAUz1Qw8qM2954A?e=hlWpNW)
@@ -118,7 +118,7 @@ Comming soon ...
 
 ### 3. Run Experiment
 
-Edit the `[MODEL NAME].json` file in `vila/` (proposed method) or `exps/` (compared methods) for global settings and hyperparameters. Run:
+Edit the `[MODEL NAME].json` file in [`vila/`](vila/) (proposed method) or [`exps/`]((exps/)) (compared methods) for global settings and hyperparameters. Run:
 
 ```bash
 python main.py --config=vila/[MODEL NAME].json
@@ -168,7 +168,11 @@ print(msg)
 
 **If you use any content of this repo for your work, please cite the following bib entries:**
 
-    @inproceedings{
+    @article{zhao2026advancing,
+      title={Advancing Analytic Class-Incremental Learning through Vision-Language Calibration},
+      author={Binyu Zhao and Wei Zhang and Xingrui Yu and Zhaonian Zou and Ivor Tsang},
+      journal={arXiv preprint arXiv:2602.13670},
+      year={2026}
     }
 
 
