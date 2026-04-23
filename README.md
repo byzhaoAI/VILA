@@ -113,8 +113,6 @@ cd VILA
 6. [scipy](https://github.com/scipy/scipy)
 7. [easydict](https://github.com/makinacorpus/easydict)
 
-#### Install via `.yml`
-Comming soon ...
 
 ### 3. Run Experiment
 
