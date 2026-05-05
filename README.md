@@ -1,4 +1,4 @@
-# VILA: Vision-Language Analytic Learning for Class-Incremental Learning
+# [ICML 2026] VILA: VIsion-Language Analytic Learning for Class-Incremental Learning
 
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/VILA-v1.0-darkcyan"></a>
@@ -31,10 +31,13 @@ This is the official PyTorch implementation of **VILA** <a href="https://arxiv.o
 
 VILA integrates a task‑adapted Vision Transformer with a frozen vision‑language model via geometric feature alignment (UGC) and semantic decision calibration (CSE). It leverages recursive least squares updates to achieve mathematically optimal weights with zero forgetting, consistently outperforming iterative methods across diverse benchmarks with higher training efficiency.
 
-
+<div align="center">
+<img src="./resources/workflow.png" width="700px">
+</div>
 
 
 ## 📌 Updates
+- [2026/05] VILA is accepted by *ICML 2026* !
 - [2026/02] Initial version of VILA is released.
 
 
