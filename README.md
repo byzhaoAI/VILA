@@ -1,4 +1,4 @@
-# [ICML 2026] VILA: VIsion-Language Analytic Learning for Class-Incremental Learning
+# [ICML 2026] Advancing Analytic Class-Incremental Learning through Vision-Language Calibration
 
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/VILA-v1.0-darkcyan"></a>
